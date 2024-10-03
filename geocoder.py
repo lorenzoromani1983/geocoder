@@ -4,7 +4,7 @@ from pycookiecheat import BrowserType, chrome_cookies
 
 class Geocoder:
 	def __init__(self, address, sessionId=None, lat=None, lon=None):
-		self.google_maps_api_key = os.environ["GOOGLE_MAPS_API_KEY"]
+		self.google_maps_api_key = os.environ["GOOGLE_MAPS_API_KEY"] #replace this with the actual key if you do not want to set the environment variable
 		self.google_maps_url = "https://maps.googleapis.com/maps/api/geocode/json"
 		self.lat = lat
 		self.lon = lon
@@ -50,6 +50,8 @@ class Geocoder:
 address = Geocoder("Via del Corso, Rome, Italy")
 coordinates = address.geocode()
 locations = address.instagram_locations()
+
+print(coordinates)
 
 for location in locations:
 	print(location)
