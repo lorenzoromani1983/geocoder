@@ -1,6 +1,6 @@
 import os
 import requests
-from pycookiecheat import BrowserType, chrome_cookies
+from pycookiecheat import chrome_cookies
 
 class Geocoder:
 	def __init__(self, address, sessionId=None, lat=None, lon=None):
